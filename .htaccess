@@ -8,8 +8,6 @@
   RewriteCond %{HTTPS} on
   RewriteRule ^ - [E=protossl:s]
 
-  RewriteRule "(^|/)\." - [F]
-
   RewriteCond %{HTTP_HOST} ^monsjovis\.com [OR]
   RewriteCond %{HTTP_HOST} ^www\.monsjovis\.com
   RewriteCond %{HTTP:X-Forwarded-Proto} !^https
