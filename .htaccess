@@ -1,8 +1,19 @@
-RewriteEngine On
-RewriteBase /
+<IfModule mod_rewrite.c>
 
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+  RewriteEngine on
 
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+  RewriteRule ^ - [E=protossl]
+  
+  RewriteCond %{HTTP:X-Forwarded-Proto} https [OR]
+  RewriteCond %{HTTPS} on
+  RewriteRule ^ - [E=protossl:s]
+
+  RewriteRule "(^|/)\." - [F]
+
+  RewriteCond %{HTTP_HOST} ^monsjovis\.com [OR]
+  RewriteCond %{HTTP_HOST} ^www\.monsjovis\.com
+  RewriteCond %{HTTP:X-Forwarded-Proto} !^https
+  RewriteCond %{HTTPS} !^on
+  RewriteRule ^ https://www.monsjovis.com%{REQUEST_URI} [L,R=301]
+
+</IfModule>
