@@ -1,0 +1,20 @@
+# System files
+# ------------
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+/.dev/
+/dist/
+
+
+# Build files & dirs
+# ---------------
+/node_modules/
+
+*.css.map
+*.js.map
+
+npm-debug.log

@@ -1,0 +1,32 @@
+@function toRem($value) {
+  @return ($value / 16);
+}
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+@mixin fluid-font-size($max-font-size, $min-font-size) {
+  & {
+    @include media(">desktop_l") {
+      font-size: ($max-font-size / 16) + rem;
+    }
+    @include media(">mobile_s", "<=desktop_l") {
+      font-size: calc(#{toRem($min-font-size) + rem} + #{$max-font-size - $min-font-size} * ((100vw - #{$size__mobile_s}) / #{strip-unit($size__desktop_l - $size__mobile_s)}));
+    }
+    @include media("<=mobile_s") {
+      font-size: ($min-font-size / 16) + rem;
+    }
+  }
+}
+
+@mixin fs-regular-s {
+  line-height: 1.4em;
+  @include fluid-font-size(16, 14);
+}
+@mixin fs-regular-m {
+  line-height: 1.4em;
+  @include fluid-font-size(22, 20);
+}
+@mixin fs-regular-l {
+  line-height: 1.4em;
+  @include fluid-font-size(28, 26);
+}

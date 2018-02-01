@@ -1,0 +1,37 @@
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent adjustments of font size after orientation
+     changes in IE and iOS. */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  color: $color__black;
+  font-family: 'Roboto Slab', monospace;
+  @include fs-regular-m();
+}
+
+h1 {
+  margin-top: 1.5rem;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h2 {
+  margin-top: .875rem;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+p {
+  margin-top: .25rem;
+  &:first-child {
+    margin-top: 0;
+  }
+}

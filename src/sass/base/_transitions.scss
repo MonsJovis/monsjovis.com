@@ -1,0 +1,6 @@
+$transition__default__duration: .3s;
+$transition__default__timinig_func: ease-in-out;
+
+@mixin transition($property) {
+    transition: $property $transition__default__duration $transition__default__timinig_func;
+}
