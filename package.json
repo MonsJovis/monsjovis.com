@@ -7,19 +7,16 @@
     "babel-plugin-transform-runtime": "6.x",
     "babel-preset-env": "x",
     "browser-sync": "2.x",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.10",
     "eslint": "4.x",
     "eslint-plugin-node": "x",
-    "gulp": "3.x",
-    "gulp-babel": "7.x",
-    "gulp-checktextdomain": "2.x",
-    "gulp-eslint": "4.x",
-    "gulp-imagemin": "3.x",
-    "gulp-line-ending-corrector": "1.x",
-    "gulp-postcss": "7.x",
-    "gulp-sass": "3.x",
-    "gulp-sourcemaps": "2.x",
-    "gulp-uglify": "3.x",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.6",
+    "image-webpack-loader": "^4.1.0",
     "include-media": "1.x",
+    "node-sass": "^4.7.2",
     "perfectionist": "2.x",
     "pixrem": "4.x",
     "postcss-color-rgba-fallback": "3.x",
@@ -28,27 +25,26 @@
     "postcss-discard-comments": "2.x",
     "postcss-discard-empty": "2.x",
     "postcss-flexbugs-fixes": "3.x",
+    "postcss-loader": "^2.1.1",
     "postcss-merge-longhand": "3.x",
     "postcss-merge-rules": "2.x",
     "postcss-minify-font-values": "1.x",
     "postcss-ordered-values": "2.x",
     "postcss-pseudoelements": "5.x",
-    "pump": "2.x",
-    "run-sequence": "2.x",
-    "webpack": "3.x",
-    "webpack-stream": "4.x"
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
   },
   "scripts": {
-    "serve": "gulp",
+    "start": "webpack --mode development --config webpack.config.js",
     "test": "eslint .",
-    "build": "gulp build"
+    "build": "webpack --mode production --config webpack.config.js"
   },
   "engines": {
     "node": ">=6.1.0"
   },
-  "dependencies": {
-    "animate.css": "^3.5.2",
-    "gulp-htmlmin": "^4.0.0",
-    "owl.carousel": "^2.2.0"
-  }
+  "dependencies": {}
 }
