@@ -65,7 +65,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       minify: {
-        collapseInlineTagWhitespace: true,
         collapseWhitespace: true,
         minifyJS: true
       }
