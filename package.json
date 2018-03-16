@@ -8,6 +8,7 @@
     "babel-preset-env": "x",
     "browser-sync": "2.x",
     "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.10",
     "eslint": "4.x",
     "eslint-plugin-node": "x",
@@ -46,7 +47,6 @@
     "build": "webpack --mode production --config webpack.prod.js"
   },
   "engines": {
-    "node": ">=6.1.0"
-  },
-  "dependencies": {}
+    "node": ">=8"
+  }
 }

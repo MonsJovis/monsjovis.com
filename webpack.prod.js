@@ -1,4 +1,5 @@
 const merge = require('webpack-merge')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
@@ -32,16 +33,16 @@ module.exports = merge.smart(common, {
       use: [
         MiniCssExtractPlugin.loader,
         {
-            loader: "css-loader"
+          loader: "css-loader"
         },
         {
-            loader: "postcss-loader",
-            options: {
-                plugins: postCssPlugins
-            },
+          loader: "postcss-loader",
+          options: {
+            plugins: postCssPlugins
+          },
         },
         {
-            loader: "sass-loader"
+          loader: "sass-loader"
         }
       ]
     }]
@@ -50,7 +51,10 @@ module.exports = merge.smart(common, {
     new MiniCssExtractPlugin({
       filename: '[name].css', // TODO: add [contenthash] see https://github.com/webpack-contrib/mini-css-extract-plugin/pull/30
       outputPath: 'css/'
-    })
+    }),
+    new CopyWebpackPlugin([
+      './src/.htaccess'
+    ])
   ],
   optimization: {
     minimizer: [
