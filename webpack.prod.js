@@ -1,6 +1,6 @@
 const merge = require('webpack-merge')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const common = require('./webpack.common.js')
 
@@ -27,36 +27,34 @@ const postCssPlugins = [
 
 module.exports = merge.smart(common, {
   module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [{
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'sass-loader',
-          },
-          {
-            loader: 'postcss-loader',
+    rules: [{
+      test: /\.scss$/,
+      use: [
+        MiniCssExtractPlugin.loader,
+        {
+            loader: "css-loader"
+        },
+        {
+            loader: "postcss-loader",
             options: {
-              plugins: postCssPlugins
-            }
-          },
-        ]
-      },
-    ]
+                plugins: postCssPlugins
+            },
+        },
+        {
+            loader: "sass-loader"
+        }
+      ]
+    }]
   },
   plugins: [
-    new ExtractTextPlugin({
-      filename: '[name].[contenthash].css'
+    new MiniCssExtractPlugin({
+      filename: '[name].css', // TODO: add [contenthash] see https://github.com/webpack-contrib/mini-css-extract-plugin/pull/30
+      outputPath: 'css/'
     })
   ],
   optimization: {
     minimizer: [
       new UglifyJSPlugin()
     ]
-  },
-}
+  }
+})

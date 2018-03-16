@@ -1,16 +1,14 @@
 const path = require('path')
-const package = require('./package.json')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
     app: './src/scripts/app.js',
-    // vendor: Object.keys(package.dependencies),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js'
+    filename: '[name].[hash].js'
   },
   devServer: {
     contentBase: './dist',
@@ -29,7 +27,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: './dist/images/'
+            outputPath: 'images/'
           },
         }, {
           loader: 'image-webpack-loader',
@@ -56,7 +54,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            outputPath: './dist/fonts/'
+            outputPath: 'fonts/'
           }
         }
       }
@@ -65,7 +63,12 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
+      minify: {
+        collapseInlineTagWhitespace: true,
+        collapseWhitespace: true,
+        minifyJS: true
+      }
     })
   ]
 }
