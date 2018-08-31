@@ -53,7 +53,8 @@ module.exports = merge.smart(common, {
       outputPath: 'css/'
     }),
     new CopyWebpackPlugin([
-      './src/.htaccess'
+      './src/.htaccess',
+      './src/pgp.key'
     ])
   ],
   optimization: {
