@@ -1,47 +1,38 @@
-const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+const { merge } = require("webpack-merge");
 
-const postCssPlugins = [
-  require('pixrem')(),
-  require('postcss-color-rgba-fallback')(),
-  require('postcss-flexbugs-fixes')(),
-  require('postcss-pseudoelements')(),
-  require('autoprefixer')({
-    browsers: ['last 4 versions']
-  }),
-  require('postcss-ordered-values')(),
-  require('postcss-merge-longhand')(),
-  require('postcss-merge-rules')(),
-  require('postcss-discard-empty')(),
-  require('perfectionist')()
-]
+const common = require("./webpack.common.js");
+const postCssPlugins = [require("autoprefixer")()];
 
-module.exports = merge.smart(common, {
-  devtool: 'inline-source-map',
+module.exports = merge(common, {
+  mode: "development",
+  devtool: "inline-source-map",
   devServer: {
-    contentBase: './dist'
+    contentBase: "./dist",
   },
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: [{
-            loader: 'style-loader',
+        use: [
+          {
+            loader: "style-loader",
           },
           {
-            loader: 'css-loader',
+            loader: "css-loader",
           },
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
           },
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
             options: {
-              plugins: postCssPlugins
-            }
+              postcssOptions: {
+                plugins: postCssPlugins,
+              },
+            },
           },
-        ]
+        ],
       },
-    ]
-  }
+    ],
+  },
 });

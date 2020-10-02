@@ -1,80 +1,82 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: './src/scripts/app.js',
+    app: "./src/scripts/app.js",
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].js'
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].[hash].js",
   },
   devServer: {
-    contentBase: './dist',
-    stats: 'errors-only',
-    open: true
+    contentBase: "./dist",
+    stats: "errors-only",
+    open: true,
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.js?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: "babel-loader",
       },
       {
         test: /\.(html)$/,
         use: {
-          loader: 'html-loader',
-        }
+          loader: "html-loader",
+        },
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[hash].[ext]',
-            outputPath: 'images/'
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[hash].[ext]",
+              outputPath: "images/",
+            },
           },
-        }, {
-          loader: 'image-webpack-loader',
-          options: {
-            mozjpeg: {
-              progressive: true,
-              quality: 81
+          {
+            loader: "image-webpack-loader",
+            options: {
+              mozjpeg: {
+                progressive: true,
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
             },
-            optipng: {
-              enabled: false,
-            },
-            pngquant: {
-              quality: '65-90',
-              speed: 4
-            },
-            gifsicle: {
-              interlaced: false,
-            }
           },
-        }]
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: {
-          loader: 'file-loader',
+          loader: "file-loader",
           options: {
-            outputPath: 'fonts/',
-            name: '[name].[hash].[ext]',
-          }
-        }
-      }
+            outputPath: "fonts/",
+            name: "[name].[hash].[ext]",
+          },
+        },
+      },
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: "src/index.html",
       minify: {
         collapseWhitespace: true,
-        minifyJS: true
-      }
-    })
-  ]
-}
+        minifyJS: true,
+      },
+    }),
+  ],
+};
