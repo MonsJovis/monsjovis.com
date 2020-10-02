@@ -1,0 +1,18 @@
+{
+  "extends": ["config:base"],
+  "timezone": "Europe/Berlin",
+  "schedule": ["before 2am"],
+  "separateMinorPatch": true,
+  "packageRules": [
+    {
+      "updateTypes": ["patch", "pin", "digest"],
+      "automergeType": "branch",
+      "automerge": true
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "automergeType": "branch",
+      "automerge": true
+    }
+  ]
+}
