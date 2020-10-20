@@ -1,7 +1,7 @@
 const { merge } = require("webpack-merge");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const common = require("./webpack.common.js");
 const postCssPlugins = [require("autoprefixer")(), require("cssnano")()];
@@ -42,6 +42,7 @@ module.exports = merge(common, {
     }),
   ],
   optimization: {
-    minimizer: [new UglifyJSPlugin()],
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
 });

@@ -7,6 +7,7 @@ module.exports = {
     app: "./src/scripts/app.js",
   },
   output: {
+    publicPath: "/",
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[hash].js",
   },
