@@ -1,7 +1,7 @@
 {
   "extends": ["config:base"],
   "timezone": "Europe/Berlin",
-  "schedule": ["before 2am"],
+  "schedule": ["before 7am"],
   "separateMinorPatch": true,
   "packageRules": [
     {
