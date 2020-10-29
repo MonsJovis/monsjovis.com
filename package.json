@@ -22,7 +22,7 @@
     "postcss-loader": "4.0.4",
     "sass-loader": "10.0.4",
     "style-loader": "2.0.0",
-    "terser-webpack-plugin": "^5.0.0",
+    "terser-webpack-plugin": "5.0.0",
     "uglifyjs-webpack-plugin": "2.2.0",
     "webpack": "5.3.1",
     "webpack-cli": "4.1.0",
@@ -35,7 +35,7 @@
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
+    "@babel/polyfill": "7.12.1",
     "@babel/runtime": "7.12.1",
     "postcss": "8.1.4"
   }
