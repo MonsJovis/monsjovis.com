@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "3.2.0",
-    "@types/node": "24.10.2",
+    "@types/node": "24.10.3",
     "typescript": "5.9.3"
   }
 }
