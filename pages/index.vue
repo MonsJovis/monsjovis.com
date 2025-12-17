@@ -7,7 +7,7 @@
         class="mb-6 max-w-[300px] rounded"
       />
       <h1 class="mb-2 text-[28px] font-normal">Markus Aurich</h1>
-      <h2 class="mb-6 text-[22px] font-normal whitespace-nowrap">
+      <h2 class="mb-6 text-[22px] font-normal">
         Tech Leader 🌟 | Product Innovator 🔥 | Startup Enthusiast 🚀
       </h2>
       <div class="flex gap-2">
