@@ -1,0 +1,60 @@
+name: Deploy Chat API
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "chat-api/**"
+      - "resume.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: chat-api
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: chat-api/package-lock.json
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+
+      - name: Setup gcloud CLI
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: chat-api
+
+      - name: Copy resume.json
+        run: cp resume.json chat-api/src/resume.json
+
+      - name: Build
+        run: npm run build
+        working-directory: chat-api
+
+      - name: Deploy Cloud Function
+        run: |
+          gcloud functions deploy chat \
+            --gen2 --runtime=nodejs24 --region=europe-west1 \
+            --source=./chat-api --entry-point=chat \
+            --trigger-http --allow-unauthenticated \
+            --set-secrets=ANTHROPIC_API_KEY=ANTHROPIC_API_KEY:latest,PERSONAL_CONTEXT=PERSONAL_CONTEXT:latest \
+            --memory=256Mi

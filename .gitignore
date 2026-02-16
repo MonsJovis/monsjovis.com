@@ -21,3 +21,10 @@ yarn-error.log*
 .vscode/
 *.swp
 *.swo
+
+# Environment variables
+.env
+.env.local
+
+# Chat API build output
+chat-api/dist/

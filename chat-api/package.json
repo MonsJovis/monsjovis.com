@@ -1,0 +1,22 @@
+{
+  "name": "chat-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "cp ../resume.json src/resume.json 2>/dev/null || true",
+    "build": "tsc",
+    "start": "functions-framework --target=chat --source=dist",
+    "dev": "npm run prebuild && tsc && functions-framework --target=chat --source=dist",
+    "deploy": "cp ../resume.json src/resume.json && npm run build && gcloud functions deploy chat --gen2 --runtime=nodejs24 --region=europe-west1 --source=. --entry-point=chat --trigger-http --allow-unauthenticated --set-secrets=ANTHROPIC_API_KEY=ANTHROPIC_API_KEY:latest,PERSONAL_CONTEXT=PERSONAL_CONTEXT:latest --memory=256Mi"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.74.0",
+    "@google-cloud/functions-framework": "5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.0.0"
+  }
+}

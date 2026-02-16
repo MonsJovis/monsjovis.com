@@ -10,14 +10,26 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@nuxtjs/color-mode": "4.0.0",
     "@tailwindcss/vite": "4.1.18",
+    "@vueuse/core": "14.2.1",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "dompurify": "3.3.1",
+    "marked": "17.0.2",
     "nuxt": "4.3.1",
+    "reka-ui": "2.8.0",
+    "tailwind-merge": "3.4.1",
     "tailwindcss": "4.1.18",
     "vue": "3.5.28"
   },
   "devDependencies": {
+    "@iconify-json/lucide": "1.2.90",
     "@nuxtjs/google-fonts": "3.2.0",
+    "@nuxtjs/seo": "3.4.0",
+    "@types/dompurify": "3.0.5",
     "@types/node": "25.2.3",
+    "shadcn-nuxt": "2.4.3",
     "typescript": "5.9.3"
   }
 }

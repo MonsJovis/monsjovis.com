@@ -1,0 +1,292 @@
+{
+  "basics": {
+    "name": "Markus Aurich",
+    "label": "Fractional CTO & CPO | AI Strategy & Product Engineering",
+    "image": "https://monsjovis.com/avatar-300x300.jpg",
+    "email": "markus@aurich.me",
+    "url": "https://monsjovis.com/",
+    "summary": "I come in when products need direction and engineering needs structure.\n\nAs a Fractional CTO & CPO, I help B2B companies shape their product strategy, set up delivery teams, and make hard technical calls—fast. At reteach, I scaled the product to 300+ customers and grew ACV by 900%, building and leading a cross-functional team of 8 across engineering, design, and product.\n\nI ramp up quickly, align stakeholders across business and tech, and deliver under uncertainty. Currently, I work at the intersection of AI strategy and hands-on product engineering—from LLM integration in B2B SaaS to building full applications with agentic engineering.",
+    "location": {
+      "city": "Vienna/Berlin"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "monsjovis",
+        "url": "https://www.linkedin.com/in/monsjovis/"
+      },
+      {
+        "network": "GitHub",
+        "username": "monsjovis",
+        "url": "https://github.com/monsjovis"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Independent Consulting",
+      "position": "Fractional CTO & CPO",
+      "url": "",
+      "startDate": "2025-07",
+      "summary": "",
+      "highlights": [
+        "Built an <strong>AI-powered assessment platform</strong> for Outcapped — integrating Google Workspace, Notion, and Gmail with LLM-driven analysis across <strong>6 business domains</strong>.",
+        "Delivered a touch-optimized <strong>industrial control interface</strong> for DOKA's heating distribution system, fully built using agentic engineering."
+      ]
+    },
+    {
+      "name": "reteach",
+      "position": "CTO & CPO",
+      "url": "",
+      "startDate": "2019-11",
+      "endDate": "2024-12",
+      "summary": "One of the leading B2B learning platforms for SMEs in the DACH market.",
+      "highlights": [
+        "Scaled from 0 to <strong>300+ customers</strong>, increasing ACV from €500 to €5,000 (<strong>+900%</strong>).",
+        "Built and led a cross-functional product team of <strong>8</strong> (6 engineers, 2 designers).",
+        "Drove architecture decisions on tech stack and cloud infrastructure (NestJS, Vue, AWS, Terraform) for long-term scalability."
+      ]
+    },
+    {
+      "name": "Independent Consulting",
+      "position": "Full-Stack Engineering Consultant",
+      "url": "",
+      "startDate": "2018-04",
+      "endDate": "2019-10",
+      "summary": "",
+      "highlights": [
+        "Delivered full-stack development for high-profile clients including <strong>Trade Republic</strong> (pre-launch phase), working directly with founders on product builds."
+      ]
+    },
+    {
+      "name": "wunderfarm",
+      "position": "Co-Founder & Lead Full-Stack Engineer",
+      "url": "",
+      "startDate": "2012-03",
+      "endDate": "2018-03",
+      "summary": "",
+      "highlights": [
+        "Co-founded a digital agency and led end-to-end engineering — from concept and architecture through deployment — for clients across industries."
+      ]
+    },
+    {
+      "name": "Barfuss.it",
+      "position": "Co-Founder & CTO",
+      "url": "",
+      "startDate": "2012-03",
+      "endDate": "2018-03",
+      "summary": "",
+      "highlights": [
+        "Co-founded and scaled a regional online magazine (South Tyrol) — built the platform, led technical operations, and drove audience growth."
+      ]
+    },
+    {
+      "name": "Zeppelin Group",
+      "position": "Full Stack Engineer",
+      "url": "",
+      "startDate": "2010",
+      "endDate": "2014",
+      "summary": "",
+      "highlights": [
+        "Full-stack development of portals and web applications for a major South Tyrolean media and real estate conglomerate."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technische Universität Berlin",
+      "url": "",
+      "area": "Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2015-10",
+      "endDate": "2019-10"
+    },
+    {
+      "institution": "Alma Mater Studiorum – Università di Bologna",
+      "url": "",
+      "area": "Information Science for Management",
+      "studyType": "Bachelor",
+      "startDate": "2011-10",
+      "endDate": "2015-03"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Methods & Frameworks",
+      "keywords": [
+        "Discovery & Due Diligence",
+        "Stakeholder Alignment",
+        "Technical Assessment",
+        "Build vs. Buy Analysis",
+        "Team Assessment & Scaling",
+        "Agile Transformation"
+      ]
+    },
+    {
+      "name": "Product & Leadership",
+      "keywords": [
+        "Product Strategy & Roadmapping",
+        "Team Building",
+        "Go-to-Market Strategy",
+        "Stakeholder Management",
+        "Agile / Lean Processes"
+      ]
+    },
+    {
+      "name": "AI & Backend",
+      "keywords": [
+        "LLM Integration (Langchain)",
+        "Agentic Engineering (Claude Code)",
+        "Node.js",
+        "NestJS",
+        "TypeScript",
+        "PHP",
+        "Python"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "keywords": [
+        "Vue.js",
+        "Nuxt.js",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Bootstrap"
+      ]
+    },
+    {
+      "name": "Site Reliability",
+      "keywords": [
+        "AWS",
+        "Google Cloud Platform",
+        "DigitalOcean",
+        "Supabase",
+        "Kubernetes",
+        "ArgoCD",
+        "Docker",
+        "Terraform"
+      ]
+    },
+    {
+      "name": "Automation & Tools",
+      "keywords": [
+        "n8n",
+        "Zapier",
+        "GitHub Actions",
+        "CI/CD",
+        "Git",
+        "Process Automation"
+      ]
+    }
+  ],
+  "domains": [
+    "HR-Tech",
+    "EdTech",
+    "FinTech",
+    "Media & Publishing",
+    "B2B Platforms"
+  ],
+  "projects": [
+    {
+      "name": "AI-Powered Business Operations Assessment",
+      "description": "Client needed a scalable way to assess business operations across six domains (Admin, People, Finance, Legal, IT, Compliance). Built an AI-powered assessment platform integrating Google Workspace, Gmail, and Notion—featuring a 160-question framework with LLM-generated reports and prioritized action plans. Recruited and onboarded 1 AI Engineer for the engagement.",
+      "keywords": [
+        "AI",
+        "Agentic Engineering",
+        "TypeScript",
+        "NestJS",
+        "Langchain",
+        "Nuxt.js",
+        "Terraform",
+        "GCP",
+        "Supabase"
+      ],
+      "url": "",
+      "startDate": "2025-07",
+      "endDate": "2025-11",
+      "entity": "Outcapped"
+    },
+    {
+      "name": "Industrial Touch UI — Heating Distribution System",
+      "description": "Client required a control interface for their heating distribution system on 10-inch industrial touch displays. Delivered a touch-optimized UI for real-time monitoring and system management. Fully built using agentic engineering.",
+      "keywords": [
+        "Frontend",
+        "Touch UI",
+        "Industrial",
+        "Nuxt.js",
+        "Tailwind",
+        "shadcn/ui"
+      ],
+      "url": "",
+      "startDate": "2025-09",
+      "endDate": "2025-11",
+      "entity": "DOKA"
+    },
+    {
+      "name": "Signivo — Email Signature Management SaaS",
+      "description": "Solo-built SaaS product using agentic engineering — from architecture to production. Demonstrates full-stack AI-assisted product development.",
+      "keywords": [
+        "SaaS",
+        "Agentic Engineering",
+        "TypeScript",
+        "NestJS",
+        "Nuxt.js",
+        "Tailwind",
+        "shadcn/ui",
+        "Supabase",
+        "Google Workspace API"
+      ],
+      "url": "",
+      "startDate": "2026-01"
+    },
+    {
+      "name": "Cloud Migration — Newsletter SaaS Platform",
+      "description": "Migrated a legacy PHP newsletter creation and sending platform from manually administered bare-metal servers to a modern AWS cloud architecture. Designed the system for high-throughput peaks of up to 200k emails in under 4 hours using serverless functions, and managed a gradual client migration to the new platform.",
+      "keywords": [
+        "Cloud Migration",
+        "SaaS",
+        "Serverless",
+        "AWS",
+        "Lambda",
+        "NestJS",
+        "Vue.js"
+      ],
+      "url": "",
+      "startDate": "2018-09",
+      "endDate": "2019-10",
+      "entity": "kulturkurier"
+    },
+    {
+      "name": "Data Backoffice",
+      "description": "Built Trade Republic's first internal data backoffice, enabling teams to manage app-facing data and debug client portfolios.",
+      "keywords": [
+        "Fintech",
+        "Backoffice",
+        "Internal Tools",
+        "Vue.js",
+        "Node.js"
+      ],
+      "url": "",
+      "startDate": "2018-04",
+      "endDate": "2018-07",
+      "entity": "Trade Republic"
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Professional Proficiency"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional Working Proficiency"
+    }
+  ],
+  "meta": {
+    "theme": "sidebar-photo-strip"
+  }
+}
