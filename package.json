@@ -27,7 +27,7 @@
     "@iconify-json/lucide": "1.2.90",
     "@nuxtjs/google-fonts": "3.2.0",
     "@nuxtjs/seo": "3.4.0",
-    "@types/dompurify": "3.0.5",
+    "@types/dompurify": "3.2.0",
     "@types/node": "25.2.3",
     "shadcn-nuxt": "2.4.3",
     "typescript": "5.9.3"
