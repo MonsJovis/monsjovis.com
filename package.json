@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "4.0.0",
-    "@tailwindcss/vite": "4.1.18",
+    "@tailwindcss/vite": "4.2.1",
     "@vueuse/core": "14.2.1",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
