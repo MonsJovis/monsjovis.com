@@ -47,6 +47,13 @@ function iconForNetwork(network: string): string {
       <p class="mt-10 text-xs text-muted-foreground">
         &copy; {{ new Date().getFullYear() }} {{ basics.name }}
       </p>
+
+      <NuxtLink
+        to="/legal-notice"
+        class="mt-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
+      >
+        Legal Notice
+      </NuxtLink>
     </div>
   </footer>
 </template>
