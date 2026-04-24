@@ -40,7 +40,7 @@ function formatDateRange(start: string, end?: string): string {
           :style="{ transitionDelay: `${i * 100 + 200}ms` }"
         >
           <CardHeader>
-            <div class="mb-1 flex items-center justify-between">
+            <div class="mb-1 flex flex-col items-start gap-1">
               <Badge v-if="project.entity" variant="outline" class="text-xs">
                 {{ project.entity }}
               </Badge>
@@ -108,7 +108,7 @@ function formatDateRange(start: string, end?: string): string {
             :key="project.name"
             class="p-4"
           >
-            <div class="mb-1 flex items-center justify-between">
+            <div class="mb-1 flex flex-col items-start gap-1">
               <Badge v-if="project.entity" variant="outline" class="text-xs">
                 {{ project.entity }}
               </Badge>
