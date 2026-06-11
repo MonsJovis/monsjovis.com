@@ -28,7 +28,7 @@
     "@nuxtjs/google-fonts": "3.2.0",
     "@nuxtjs/seo": "5.2.0",
     "@types/dompurify": "3.2.0",
-    "@types/node": "25.9.1",
+    "@types/node": "25.9.2",
     "shadcn-nuxt": "2.7.4",
     "typescript": "6.0.3"
   }
