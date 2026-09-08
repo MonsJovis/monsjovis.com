@@ -24,7 +24,7 @@
     "vue": "3.5.42"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "1.2.127",
+    "@iconify-json/lucide": "1.2.129",
     "@nuxtjs/google-fonts": "3.2.0",
     "@nuxtjs/seo": "5.3.14",
     "@types/dompurify": "3.2.0",
