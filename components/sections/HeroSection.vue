@@ -58,10 +58,10 @@ onMounted(() => {
       </Badge>
 
       <p
-        class="mb-8 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
+        class="mb-8 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
       >
-        I come in when products need direction<br class="hidden sm:block" />
-        and engineering needs structure.
+        I help product and engineering teams build the harness and processes<br class="hidden sm:block" />
+        to ship better products with AI agents.
       </p>
 
       <div class="flex flex-wrap items-center justify-center gap-3">

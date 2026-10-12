@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Markus Aurich",
-    "label": "Fractional CTO & CPO | AI Strategy & Product Engineering",
+    "label": "Agentic Engineering Consultant & Fractional CTO",
     "image": "https://monsjovis.com/avatar-300x300.jpg",
     "email": "markus@aurich.me",
     "url": "https://monsjovis.com/",
-    "summary": "I come in when products need direction and engineering needs structure.\n\nAs a Fractional CTO & CPO, I help B2B companies shape their product strategy, set up delivery teams, and make hard technical calls—fast. At reteach, I scaled the product to 300+ customers and grew ACV by 900%, building and leading a cross-functional team of 8 across engineering, design, and product.\n\nI ramp up quickly, align stakeholders across business and tech, and deliver under uncertainty. Currently, I work at the intersection of AI strategy and hands-on product engineering—from LLM integration in B2B SaaS to building full applications with agentic engineering.",
+    "summary": "I help product and engineering teams build the harness and processes to ship better products with AI agents.\n\nI bring agentic engineering into existing product teams: toolchain and conventions, a development cycle with clear human checkpoints, coaching until the leads carry it themselves, and numbers that show whether it works. At Re:Guest I lead this change as Fractional Head of Engineering.\n\nI use what I teach. I built Signivo, a production SaaS, with agents as the main tool: 185k lines of code in three months. Before that I was CTO & CPO at reteach and scaled the product to 300+ customers and a team of 8.",
     "location": {
       "city": "Vienna/Berlin"
     },
@@ -25,13 +25,16 @@
   "work": [
     {
       "name": "Independent Consulting",
-      "position": "Fractional CTO & CPO",
+      "position": "Agentic Engineering Consultant & Fractional CTO",
       "url": "",
       "startDate": "2025-07",
       "summary": "",
       "highlights": [
-        "Built an <strong>AI-powered assessment platform</strong> for Outcapped — integrating Google Workspace, Notion, and Gmail with LLM-driven analysis across <strong>6 business domains</strong>.",
-        "Delivered a touch-optimized <strong>industrial control interface</strong> for the heating distribution system of an enterprise in the construction sector, fully built using agentic engineering."
+        "<strong>Re:Guest</strong> (hospitality SaaS): Agentic Engineering Consultant since 05/2026, Fractional Head of Engineering since 10/2026. Leading the move to <strong>agentic engineering</strong> in three product divisions: operating model, an agent-first development cycle with human checkpoints, coaching per team, and a cockpit that measures adoption and delivery.",
+        "<strong>Burger Edelmetalle</strong> (precious-metals refiner): <strong>agentic engineering rewrite</strong> of a business-critical legacy component under bank-grade IT security requirements. Ongoing framework contract for extensions, plus coaching the in-house developers.",
+        "Agentic engineering workshop, toolchain analysis and pilot plan for a <strong>Swiss electronics manufacturer with 90 engineers</strong> (with a partner, starting 10/2026).",
+        "Built an <strong>AI-powered assessment platform</strong> for Outcapped: LLM-driven analysis across <strong>6 business domains</strong>, connected to Google Workspace, Gmail, and Notion.",
+        "Delivered a touch-optimized <strong>industrial control interface</strong> for the heating distribution system of a company in the construction sector. Fully built with agentic engineering."
       ]
     },
     {
@@ -66,7 +69,7 @@
       "endDate": "2018-03",
       "summary": "",
       "highlights": [
-        "Co-founded a digital agency and led end-to-end engineering — from concept and architecture through deployment — for clients across industries."
+        "Co-founded a digital agency and led engineering for clients across industries, from concept and architecture to deployment."
       ]
     },
     {
@@ -77,7 +80,7 @@
       "endDate": "2018-03",
       "summary": "",
       "highlights": [
-        "Co-founded and scaled a regional online magazine (South Tyrol) — built the platform, led technical operations, and drove audience growth."
+        "Co-founded and scaled a regional online magazine in South Tyrol: built the platform, led technical operations, and drove audience growth."
       ]
     },
     {
@@ -102,7 +105,7 @@
       "endDate": "2019-10"
     },
     {
-      "institution": "Alma Mater Studiorum – Università di Bologna",
+      "institution": "Alma Mater Studiorum - Università di Bologna",
       "url": "",
       "area": "Information Science for Management",
       "studyType": "Bachelor",
@@ -111,6 +114,17 @@
     }
   ],
   "skills": [
+    {
+      "name": "Agentic Engineering",
+      "keywords": [
+        "Claude Code",
+        "Agent-First Development Cycle",
+        "Context Engineering (AGENTS.md, Skills, Hooks)",
+        "Multi-Agent Workflows",
+        "Adoption Coaching",
+        "Delivery & Adoption Metrics"
+      ]
+    },
     {
       "name": "Methods & Frameworks",
       "keywords": [
@@ -136,7 +150,6 @@
       "name": "AI & Backend",
       "keywords": [
         "LLM Integration (Langchain)",
-        "Agentic Engineering (Claude Code)",
         "Node.js",
         "NestJS",
         "TypeScript",
@@ -180,6 +193,9 @@
     }
   ],
   "domains": [
+    "Hospitality",
+    "Industrial",
+    "Precious Metals",
     "HR-Tech",
     "EdTech",
     "FinTech",
@@ -188,8 +204,24 @@
   ],
   "projects": [
     {
+      "name": "Agentic Engineering Rollout: Hospitality SaaS",
+      "description": "Bringing agentic engineering into a product organization with three divisions. An operating model and an agent-first development cycle with three human checkpoints: plan review, gap closing, merge. Coaching team by team. A cockpit on Jira and GitLab data tracks adoption and delivery per team.",
+      "keywords": [
+        "Agentic Engineering",
+        "Claude Code",
+        "Operating Model",
+        "Coaching",
+        "Engineering Metrics",
+        "Jira",
+        "GitLab"
+      ],
+      "url": "",
+      "startDate": "2026-05",
+      "entity": "Re:Guest"
+    },
+    {
       "name": "AI-Powered Business Operations Assessment",
-      "description": "Client needed a scalable way to assess business operations across six domains (Admin, People, Finance, Legal, IT, Compliance). Built an AI-powered assessment platform integrating Google Workspace, Gmail, and Notion—featuring a 160-question framework with LLM-generated reports and prioritized action plans. Recruited and onboarded 1 AI Engineer for the engagement.",
+      "description": "Built an AI-powered platform that assesses business operations across six domains (Admin, People, Finance, Legal, IT, Compliance). A 160-question framework with LLM-generated reports and prioritized action plans, connected to Google Workspace, Gmail, and Notion. Recruited and onboarded an AI engineer for the engagement.",
       "keywords": [
         "AI",
         "Agentic Engineering",
@@ -207,8 +239,8 @@
       "entity": "Outcapped"
     },
     {
-      "name": "Industrial Touch UI — Heating Distribution System",
-      "description": "Client required a control interface for their heating distribution system on 10-inch industrial touch displays. Delivered a touch-optimized UI for real-time monitoring and system management. Fully built using agentic engineering.",
+      "name": "Industrial Touch UI: Heating Distribution System",
+      "description": "Delivered a touch UI for a heating distribution system on 10-inch industrial displays: real-time monitoring and control. Fully built with agentic engineering.",
       "keywords": [
         "Frontend",
         "Touch UI",
@@ -223,8 +255,8 @@
       "entity": "LA&GL Embedded Solutions"
     },
     {
-      "name": "Signivo — Email Signature Management SaaS",
-      "description": "Solo-built SaaS product using agentic engineering — from architecture to production. Demonstrates full-stack AI-assisted product development.",
+      "name": "Signivo: Email Signature Management SaaS",
+      "description": "SaaS for email signature management in Google Workspace. Built solo with agentic engineering, from architecture to production.",
       "keywords": [
         "SaaS",
         "Agentic Engineering",
@@ -240,8 +272,8 @@
       "startDate": "2026-01"
     },
     {
-      "name": "Cloud Migration — Newsletter SaaS Platform",
-      "description": "Migrated a legacy PHP newsletter creation and sending platform from manually administered bare-metal servers to a modern AWS cloud architecture. Designed the system for high-throughput peaks of up to 200k emails in under 4 hours using serverless functions, and managed a gradual client migration to the new platform.",
+      "name": "Cloud Migration: Newsletter SaaS Platform",
+      "description": "Moved a legacy PHP newsletter platform from manually run bare-metal servers to AWS. Serverless functions handle peaks of up to 200k emails in under 4 hours. Clients moved over step by step.",
       "keywords": [
         "Cloud Migration",
         "SaaS",
@@ -258,7 +290,7 @@
     },
     {
       "name": "Data Backoffice",
-      "description": "Built Trade Republic's first internal data backoffice, enabling teams to manage app-facing data and debug client portfolios.",
+      "description": "Built Trade Republic's first internal data backoffice. Teams used it to manage app-facing data and debug client portfolios.",
       "keywords": [
         "Fintech",
         "Backoffice",

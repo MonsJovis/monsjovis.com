@@ -7,7 +7,7 @@ function formatDateRange(start: string, end: string): string {
     const [year] = d.split('-')
     return year
   }
-  return `${fmt(start)} — ${fmt(end)}`
+  return `${fmt(start)} - ${fmt(end)}`
 }
 </script>
 
@@ -59,7 +59,7 @@ function formatDateRange(start: string, end: string): string {
             variant="outline"
             class="px-3 py-1"
           >
-            {{ lang.language }} — {{ lang.fluency }}
+            {{ lang.language }}: {{ lang.fluency }}
           </Badge>
         </div>
       </div>

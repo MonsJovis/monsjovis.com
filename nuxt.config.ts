@@ -7,20 +7,20 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Markus Aurich — Fractional CTO & CPO',
+      title: 'Markus Aurich | Agentic Engineering Consultant & Fractional CTO',
       htmlAttrs: { lang: 'en' },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Fractional CTO & CPO — AI-first product leadership, team building, and hands-on engineering. Decade of founder experience across product strategy and startup scaling.' },
-        { property: 'og:title', content: 'Markus Aurich — Fractional CTO & CPO' },
-        { property: 'og:description', content: 'AI-first product leadership, team building, and hands-on engineering.' },
+        { name: 'description', content: 'I help product and engineering teams build the harness and processes to ship better products with AI agents. Agentic engineering consultant and fractional CTO, with 10+ years as a founder and CTO.' },
+        { property: 'og:title', content: 'Markus Aurich | Agentic Engineering Consultant & Fractional CTO' },
+        { property: 'og:description', content: 'I help product and engineering teams build the harness and processes to ship better products with AI agents.' },
         { property: 'og:image', content: 'https://monsjovis.com/avatar-300x300.jpg' },
         { property: 'og:url', content: 'https://monsjovis.com' },
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:title', content: 'Markus Aurich — Fractional CTO & CPO' },
-        { name: 'twitter:description', content: 'AI-first product leadership, team building, and hands-on engineering.' },
+        { name: 'twitter:title', content: 'Markus Aurich | Agentic Engineering Consultant & Fractional CTO' },
+        { name: 'twitter:description', content: 'I help product and engineering teams build the harness and processes to ship better products with AI agents.' },
         { name: 'twitter:image', content: 'https://monsjovis.com/avatar-300x300.jpg' },
       ],
       link: [

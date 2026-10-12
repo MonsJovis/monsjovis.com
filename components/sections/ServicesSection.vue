@@ -3,19 +3,19 @@ const { elementRef, isVisible } = useScrollAnimation()
 
 const services = [
   {
-    icon: 'target',
-    title: 'Product Strategy',
-    description: 'From vision to roadmap — I define product direction, prioritize ruthlessly, and align teams around outcomes that matter.',
+    icon: 'sparkles',
+    title: 'Agentic Engineering',
+    description: 'Your engineers work with AI agents every day. I set up toolchain, conventions, and a development cycle with clear human checkpoints. Then I coach until your leads run it themselves, with numbers that show whether it works.',
   },
   {
     icon: 'users',
-    title: 'Team & Engineering',
-    description: 'I build and lead cross-functional product teams, establish development workflows, and create cultures of continuous growth.',
+    title: 'Fractional CTO & Head of Engineering',
+    description: 'Part-time technical leadership: architecture calls, operating model, delivery process, and building the team that carries it after I leave.',
   },
   {
-    icon: 'sparkles',
-    title: 'AI Integration',
-    description: 'Hands-on with LLMs and agentic AI — from integrating AI into existing products to building full applications with agentic engineering.',
+    icon: 'target',
+    title: 'Product Strategy',
+    description: 'From vision to roadmap: I set the product direction, prioritize hard, and align teams on outcomes.',
   },
 ]
 

@@ -8,7 +8,7 @@ const emit = defineEmits<{
 }>()
 
 useHead({
-  title: `${basics.value.name} — ${basics.value.label}`,
+  title: `${basics.value.name} | ${basics.value.label}`,
   meta: [
     { name: 'description', content: basics.value.summary.split('\n\n')[0] },
   ],
@@ -19,7 +19,7 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'Person',
         name: basics.value.name,
-        jobTitle: 'Fractional CTO & CPO',
+        jobTitle: 'Agentic Engineering Consultant & Fractional CTO',
         email: `mailto:${email.value}`,
         url: basics.value.url,
         image: basics.value.image,

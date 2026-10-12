@@ -14,7 +14,7 @@ function formatDateRange(start: string, end?: string): string {
     const date = new Date(parseInt(year), parseInt(month) - 1)
     return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
   }
-  return end ? `${fmt(start)} — ${fmt(end)}` : `${fmt(start)} — Present`
+  return end ? `${fmt(start)} - ${fmt(end)}` : `${fmt(start)} - Present`
 }
 </script>
 

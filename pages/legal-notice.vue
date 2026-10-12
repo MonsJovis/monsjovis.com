@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Legal Notice — Markus Aurich',
+  title: 'Legal Notice | Markus Aurich',
   meta: [
     { name: 'robots', content: 'noindex' },
   ],

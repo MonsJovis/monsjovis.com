@@ -5,9 +5,9 @@ const metrics = [
   { value: 15, suffix: "+", label: "Years", sublabel: "in Tech" },
   { value: 10, suffix: "+", label: "Engagements", sublabel: "delivered" },
   {
-    value: 5,
+    value: 8,
     label: "Industries",
-    sublabel: "HRTech, EdTech, Media, Online Marketing, SaaS",
+    sublabel: "served",
   },
   { value: 4, label: "AI Products", sublabel: "shipped" },
 ];
