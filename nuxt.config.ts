@@ -1,4 +1,12 @@
+import { createHash } from 'node:crypto'
+import { readFileSync } from 'node:fs'
 import tailwindcss from '@tailwindcss/vite'
+
+// Content hash in the icon URL: a changed icon gets a new URL, so no browser keeps the old one
+const versioned = (file: string) => {
+  const hash = createHash('sha256').update(readFileSync(new URL(`./public/${file}`, import.meta.url))).digest('hex').slice(0, 8)
+  return `/${file}?v=${hash}`
+}
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
@@ -24,9 +32,9 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: 'https://monsjovis.com/avatar-300x300.jpg' },
       ],
       link: [
-        { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+        { rel: 'icon', href: versioned('favicon.ico'), sizes: '32x32' },
+        { rel: 'icon', type: 'image/svg+xml', href: versioned('favicon.svg') },
+        { rel: 'apple-touch-icon', href: versioned('apple-touch-icon.png') },
       ],
     },
   },
