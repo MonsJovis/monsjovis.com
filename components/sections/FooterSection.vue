@@ -21,7 +21,7 @@ function iconForNetwork(network: string): string {
       </Badge>
 
       <h2 class="mb-6 text-2xl font-bold tracking-tight">
-        Available for interim and consulting engagements
+        Available for fractional and consulting engagements
       </h2>
 
       <div class="mb-8 flex items-center gap-4">
