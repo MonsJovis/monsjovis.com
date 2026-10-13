@@ -28,9 +28,9 @@ function openChat() {
       aria-label="Toggle dark mode"
       @click="toggleColorMode"
     >
-      <!-- Sun icon (shown in dark mode) -->
+      <!-- Sun icon (shown in dark mode). Both icons render and CSS picks one: colorMode is unknown while prerendering -->
       <svg
-        v-if="colorMode.value === 'dark'"
+        class="hidden dark:block"
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
@@ -46,7 +46,7 @@ function openChat() {
       </svg>
       <!-- Moon icon (shown in light mode) -->
       <svg
-        v-else
+        class="dark:hidden"
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"

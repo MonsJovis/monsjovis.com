@@ -5,27 +5,25 @@ const emit = defineEmits<{
   openChat: [];
 }>();
 
-const isVisible = ref(false);
-
-onMounted(() => {
-  requestAnimationFrame(() => {
-    isVisible.value = true;
-  });
-});
+// WebP sizes next to the avatar JPEG, e.g. /avatar-<hash>-576.webp (nuxt.config.ts checks they exist)
+const avatarBase = new URL(basics.value.image).pathname.replace(/\.jpg$/, "");
+const avatarSrcset = [288, 576, 864]
+  .map((w) => `${avatarBase}-${w}.webp ${w}w`)
+  .join(", ");
 </script>
 
 <template>
   <section
     class="relative flex min-h-[85vh] items-center justify-center px-4 py-20"
   >
-    <div
-      class="mx-auto flex max-w-2xl flex-col items-center text-center transition-all duration-700"
-      :class="
-        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-      "
-    >
+    <div class="mx-auto flex max-w-2xl flex-col items-center text-center">
       <img
-        :src="basics.image"
+        :src="`${avatarBase}.jpg`"
+        :srcset="avatarSrcset"
+        sizes="288px"
+        width="288"
+        height="288"
+        fetchpriority="high"
         :alt="basics.name"
         class="mb-8 size-72 rounded-full object-cover ring-2 ring-border"
       />

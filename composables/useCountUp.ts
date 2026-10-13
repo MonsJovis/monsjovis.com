@@ -1,5 +1,7 @@
 export function useCountUp(target: number, duration = 1500) {
-  const current = ref(0)
+  // Starts at the target, so the server-rendered HTML carries the real number for crawlers.
+  // The bar is hidden until start(), which then counts up from 0.
+  const current = ref(target)
   let started = false
 
   function easeOutCubic(t: number): number {
@@ -9,6 +11,7 @@ export function useCountUp(target: number, duration = 1500) {
   function start() {
     if (started) return
     started = true
+    current.value = 0
 
     const startTime = performance.now()
 

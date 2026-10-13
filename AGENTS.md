@@ -47,7 +47,15 @@ resume.json        # Resume data (JSON Resume format) — single source of truth
 - **Styling:** Tailwind utility classes only. Use `cn()` for conditional class merging. OKLCH color variables for theming. Dark mode via `.dark` class (system preference default).
 - **Types:** Explicit TypeScript interfaces for all data structures. Strict mode enabled.
 - **No linter/formatter configured** — follow existing code style.
-- **Avatar:** `public/avatar-<hash>.jpg`, named by the first 8 hex characters of its SHA-256, so a new picture gets a new URL and no cache keeps the old one. For a new picture: add the file under its new name, then update `resume.json`, `nuxt.config.ts` and both `resume.*.json` in the `cv` repo. `avatar-300x300.jpg` stays as a copy of the current picture, because older pages link it directly (monsjovis.dev docs, Signivo signature templates).
+- **Avatar:** `public/avatar-<hash>.jpg` (1600x1600), named by the first 8 hex characters of its SHA-256, so a new picture gets a new URL and no cache keeps the old one. Next to it the hero serves `avatar-<hash>-{288,576,864}.webp` (`magick avatar-<hash>.jpg -resize 576x576 -strip -quality 80 avatar-<hash>-576.webp`, same for 288 and 864). The URL lives in `resume.json` only, `nuxt.config.ts` reads it from there and fails the build if one of the four files is missing. For a new picture: add the files, update `resume.json` and both `resume.*.json` in the `cv` repo. `avatar-300x300.jpg` stays as a copy of the current picture, because older pages link it directly (monsjovis.dev docs, Signivo signature templates).
+- **Hero without entrance animation:** the hero is visible from the first paint. A fade-in from `opacity: 0` (JS or CSS) hides the LCP element, and Lighthouse then cannot measure the page at all (`NO_LCP`).
+
+## SEO and GEO
+
+- **`/llms.txt`** is the page as Markdown for AI systems, generated from `resume.json` and `lib/services.ts` by `server/routes/llms.txt.ts` and prerendered by `nuxt generate`. It follows the page by itself.
+- **JSON-LD** (`ProfilePage` with `Person`) in `pages/index.vue` is built from `resume.json` as well.
+- **`public/sitemap.xml` and `public/robots.txt`** are static. A new indexable page goes into the sitemap.
+- **Metrics render their real numbers on the server.** Crawlers without JavaScript read "15+", not "0"; the count-up starts from 0 only in the browser.
 
 ## Deployment
 
