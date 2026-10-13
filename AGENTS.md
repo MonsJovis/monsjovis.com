@@ -47,6 +47,7 @@ resume.json        # Resume data (JSON Resume format) — single source of truth
 - **Styling:** Tailwind utility classes only. Use `cn()` for conditional class merging. OKLCH color variables for theming. Dark mode via `.dark` class (system preference default).
 - **Types:** Explicit TypeScript interfaces for all data structures. Strict mode enabled.
 - **No linter/formatter configured** — follow existing code style.
+- **Avatar:** `public/avatar-<hash>.jpg`, named by the first 8 hex characters of its SHA-256, so a new picture gets a new URL and no cache keeps the old one. For a new picture: add the file under its new name, then update `resume.json`, `nuxt.config.ts` and both `resume.*.json` in the `cv` repo. `avatar-300x300.jpg` stays as a copy of the current picture, because older pages link it directly (monsjovis.dev docs, Signivo signature templates).
 
 ## Deployment
 
