@@ -5,7 +5,7 @@
     "image": "https://monsjovis.com/avatar-eed3800d.jpg",
     "email": "markus@aurich.me",
     "url": "https://monsjovis.com/",
-    "summary": "I help product and engineering teams build the harness and processes to ship better products with AI agents.\n\nI bring agentic engineering into existing product teams: toolchain and conventions, a development cycle with clear human checkpoints, coaching until the leads carry it themselves, and numbers that show whether it works. At Re:Guest I lead this change as Fractional Head of Engineering.\n\nI use what I teach. I built Signivo, a production SaaS, fully agentic and run as a real business. Before that I was CTO & CPO at reteach and scaled the product to 300+ customers and a team of 8.",
+    "summary": "I help product and engineering teams build the harness and processes to ship better products with AI agents.\n\nI bring agentic engineering into existing product teams: toolchain and conventions, a development cycle with clear human checkpoints, coaching until the leads carry it themselves, and numbers that show whether it works. At Re:Guest I lead this change as Fractional Head of Engineering.\n\nI take the same approach to finance. At Agentic Business Builders we build finance processes that run on their own and hold up in an audit.\n\nI use what I teach. I built Signivo, a production SaaS, fully agentic and run as a real business. Before that I was CTO & CPO at reteach and scaled the product to 300+ customers and a team of 8.",
     "location": {
       "city": "Vienna/Berlin"
     },
@@ -23,6 +23,22 @@
     ]
   },
   "work": [
+    {
+      "name": "Agentic Business Builders",
+      "position": "Co-Founder",
+      "url": "https://agentic-business-builders.com",
+      "startDate": "2026-10",
+      "summary": "Agentic engineering for finance teams. We build finance processes that run on their own and hold up in an audit. My co-founder brings the finance side, from accounting to CFO, I bring the engineering.",
+      "highlights": []
+    },
+    {
+      "name": "Signivo",
+      "position": "Co-Founder",
+      "url": "https://signivo.io",
+      "startDate": "2026-02",
+      "summary": "Email signature management for Google Workspace and Microsoft 365, built fully agentic and run as a real business. Co-founded, I own product and engineering.",
+      "highlights": []
+    },
     {
       "name": "Independent Consulting",
       "position": "Agentic Engineering Consultant & Fractional CTO",
@@ -252,23 +268,6 @@
       "startDate": "2025-09",
       "endDate": "2025-11",
       "entity": "LA&GL Embedded Solutions"
-    },
-    {
-      "name": "Signivo: Email Signature Management SaaS",
-      "description": "SaaS for email signature management in Google Workspace. Built solo with agentic engineering, from architecture to production.",
-      "keywords": [
-        "SaaS",
-        "Agentic Engineering",
-        "TypeScript",
-        "NestJS",
-        "Nuxt.js",
-        "Tailwind",
-        "shadcn/ui",
-        "Supabase",
-        "Google Workspace API"
-      ],
-      "url": "https://signivo.io",
-      "startDate": "2026-01"
     },
     {
       "name": "Cloud Migration: Newsletter SaaS Platform",
