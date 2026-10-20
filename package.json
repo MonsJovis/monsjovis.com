@@ -26,7 +26,7 @@
   "devDependencies": {
     "@iconify-json/lucide": "1.2.142",
     "@nuxtjs/google-fonts": "3.2.0",
-    "@nuxtjs/seo": "5.3.16",
+    "@nuxtjs/seo": "6.0.1",
     "@types/dompurify": "3.2.0",
     "@types/node": "26.6.5",
     "shadcn-nuxt": "2.8.2",
